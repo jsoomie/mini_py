@@ -31,7 +31,7 @@ while plays > 0:
             print("Try going lower...")
             plays -= 1
         elif answer < rNumber:
-            print("Trying going higher...")
+            print("Try going higher...")
             plays -= 1
         else:
             print("Guess again!")
