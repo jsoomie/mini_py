@@ -5,12 +5,12 @@ questions = {
     "What does PSU stand for?": "power supply unit"
 }
 
-score = 0
-
 print("\n\nWelcome to the computer quiz!\n\n")
 playing = input("Would you like to play? (y/n) ").lower()
-if playing != "yes" or playing != "y":
+if playing != "yes" and playing != "y":
     quit()
+
+score = 0
 
 for question in questions:
     answer = questions[question]
@@ -20,3 +20,7 @@ for question in questions:
         score += 1
     else:
         print("Incorrect!\n")
+
+print(f"Your score is: {score} out {len(questions)}")
+print(f"That's {(score/ 4 * 100)} %!")
+print("\nThanks for playing!\n")
