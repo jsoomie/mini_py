@@ -9,24 +9,32 @@ right = {"r", "right", "east", "e"}
 down = {"d", "down", "south", "s"}
 left = {"l", "left", "west", "w"}
 
+#########################################################
+# FUNCTIONS #
+
 
 def gameOver():
+    # prints game over
     print("GAME OVER")
 
 
 def error(text="Not a valid action"):
+    # prints error message
     print(text)
 
 
 def desc(text="Room desc here"):
+    # prints description of room
     print(f"DESC: {text}")
 
 
 def space():
+    # prints line space
     print("\n")
 
 
 def displayDirection():
+    # takes in direction
     direction = input("\nWhich direction do you head to? ").lower()
     if direction in up:
         return "up"
@@ -38,6 +46,7 @@ def displayDirection():
         return "left"
     else:
         return direction
+#########################################################
 
 
 # START
